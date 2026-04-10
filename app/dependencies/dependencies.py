@@ -34,13 +34,22 @@ class FuzzyChecker:
         self,
         word: str,
         _list: list[str],
-    ) -> list[dict[str, list[list[float]]]]:
-        """It returns the hank of the most similar word in the list if the similarity is above the cutoff"""
-        word_candidate = self.embed_word(word)
-        list_canditates = self.embed_list(_list)
+    ) -> list[tuple[int, float, str]]:
+        """Returns a ranked list of (index, score, word) sorted by descending similarity."""
+        word_embedding = self.embed_word(word)
+        list_embeddings = self.embed_list(_list)
 
-        result = self.model.similarity(word_candidate, list_canditates)
-        return {"resute": result}
+        similarities = self.model.similarity(word_embedding, list_embeddings)[0]
+        ranked = sorted(
+            enumerate(similarities.tolist()),
+            key=lambda x: x[1],
+            reverse=True,
+        )
+        return [(idx, score, _list[idx]) for idx, score in ranked]
 
-
-def get_fuzzy_checker(): ...
+    def find_most_similar(self, word: str, _list: list[str]) -> tuple[int, float, str]:
+        """Returns the (index, score, word) of the most similar word above the cutoff, or None."""
+        ranked = self.compare_word(word, _list)
+        if ranked and ranked[0][1] >= self.cutoff:
+            return ranked[0]
+        return ranked[0] if ranked else None
