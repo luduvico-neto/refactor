@@ -1,9 +1,8 @@
 import json
+from loguru import logger
 from sentence_transformers import SentenceTransformer
 
 from models.models import DataFrame
-
-from loguru import logger
 
 
 def load_dataframe(file_path: str) -> DataFrame:
@@ -15,16 +14,31 @@ def load_dataframe(file_path: str) -> DataFrame:
 
 
 class FuzzyChecker:
-    def __init__(self, cutoff: float, _model: SentenceTransformer = None):
+    def __init__(
+        self,
+        cutoff: float,
+        _model: SentenceTransformer = None,
+    ):
         self.cutoff = cutoff
         self.model = _model
+
+    def embed_list(self, _list: list[str]):
+        embedded_list = self.model.encode(_list, convert_to_tensor=True)
+        return embedded_list
+
+    def embed_word(self, word: str):
+        embed_word = self.model.encode(word, convert_to_tensor=True)
+        return embed_word
 
     def compare_word(
         self, word: str, _list: list[str]
     ) -> list[dict[str, list[list[float]]]]:
         """It returns the hank of the most similar word in the list if the similarity is above the cutoff"""
-        candidate = self.model.encode([word], convert_to_tensor=True)
-        candidates = self.model.encode(_list, convert_to_tensor=True)
+        word_candidate = self.embed_word(word)
+        list_canditates = self.embed_list(_list)
 
-        result = self.model.similarity(candidate, candidates)
-        return result
+        result = self.model.similarity(word_candidate, list_canditates)
+        return {"resute": result}
+
+
+def get_fuzzy_checker(): ...

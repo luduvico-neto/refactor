@@ -1,20 +1,19 @@
-from sentence_transformers import SentenceTransformer
-from dependencies.dependencies import FuzzyChecker
+from collections.abc import Generator
+from contextlib import contextmanager
 
 from loguru import logger
+from sentence_transformers import SentenceTransformer
+
+from dependencies.dependencies import FuzzyChecker
 
 
-TRANSFORMER: SentenceTransformer | None = None
-
-
-def set_transformer() -> None:
+@contextmanager
+def lifespan() -> Generator[FuzzyChecker]:
     logger.info("Loading the all-MiniLM-L6-v2 sentence transformer instance...")
     sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
+    fuzzy_checker = FuzzyChecker(cutoff=0.9, _model=sentence_model)
+    logger.info("Application startup complete.")
 
-    fuzzy_model = FuzzyChecker(cutoff=0.9, _model=sentence_model)
-    global TRANSFORMER
-    TRANSFORMER = fuzzy_model
+    yield fuzzy_checker
 
-
-def set_dependencies() -> None:
-    import dependencies
+    logger.info("Shutting down application...")

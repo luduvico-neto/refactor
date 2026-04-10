@@ -1,2 +1,5 @@
-from dependencies.dependencies import load_dataframe
-import core
+from core import lifespan
+
+
+with lifespan() as fuzzy_checker:
+    fuzzy_checker.compare_word()
