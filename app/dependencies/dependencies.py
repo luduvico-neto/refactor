@@ -22,16 +22,18 @@ class FuzzyChecker:
         self.cutoff = cutoff
         self.model = _model
 
-    def embed_list(self, _list: list[str]):
+    def embed_list(self, _list: list[str]) -> list[list[float]]:
         embedded_list = self.model.encode(_list, convert_to_tensor=True)
         return embedded_list
 
-    def embed_word(self, word: str):
+    def embed_word(self, word: str) -> list[list[float]]:
         embed_word = self.model.encode(word, convert_to_tensor=True)
         return embed_word
 
     def compare_word(
-        self, word: str, _list: list[str]
+        self,
+        word: str,
+        _list: list[str],
     ) -> list[dict[str, list[list[float]]]]:
         """It returns the hank of the most similar word in the list if the similarity is above the cutoff"""
         word_candidate = self.embed_word(word)
