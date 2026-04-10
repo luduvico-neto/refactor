@@ -1,0 +1,1068 @@
+{
+    "data": [
+        {
+            "neighborhood": "Copacabana",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "average_price": 850000,
+            "ad_quantity": 230,
+            "days_in_market": 25
+        },
+        {
+            "neighborhood": "Ipanema",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "average_price": 1200000,
+            "ad_quantity": 185,
+            "days_in_market": 20
+        },
+        {
+            "neighborhood": "Leblon",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "average_price": 1500000,
+            "ad_quantity": 95,
+            "days_in_market": 18
+        },
+        {
+            "neighborhood": "Botafogo",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "average_price": 650000,
+            "ad_quantity": 310,
+            "days_in_market": 32
+        },
+        {
+            "neighborhood": "Tijuca",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "average_price": 420000,
+            "ad_quantity": 275,
+            "days_in_market": 40
+        },
+        {
+            "neighborhood": "Barra da Tijuca",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "average_price": 780000,
+            "ad_quantity": 400,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Copcabana",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "average_price": 870000,
+            "ad_quantity": 45,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Ipanma",
+            "city": "Rio de Janero",
+            "state": "Rio de Janeiro",
+            "average_price": 1180000,
+            "ad_quantity": 12,
+            "days_in_market": 22
+        },
+        {
+            "neighborhood": "Jardins",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 1100000,
+            "ad_quantity": 320,
+            "days_in_market": 22
+        },
+        {
+            "neighborhood": "Vila Mariana",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 680000,
+            "ad_quantity": 290,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Pinheiros",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 750000,
+            "ad_quantity": 350,
+            "days_in_market": 27
+        },
+        {
+            "neighborhood": "Moema",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 900000,
+            "ad_quantity": 210,
+            "days_in_market": 24
+        },
+        {
+            "neighborhood": "Itaim Bibi",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 1050000,
+            "ad_quantity": 280,
+            "days_in_market": 21
+        },
+        {
+            "neighborhood": "Consolação",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 520000,
+            "ad_quantity": 190,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Tatuapé",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 480000,
+            "ad_quantity": 330,
+            "days_in_market": 38
+        },
+        {
+            "neighborhood": "Jardim Paulista",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 980000,
+            "ad_quantity": 150,
+            "days_in_market": 23
+        },
+        {
+            "neighborhood": "Pinheros",
+            "city": "São Paullo",
+            "state": "São Paulo",
+            "average_price": 740000,
+            "ad_quantity": 30,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Moena",
+            "city": "São Paulo",
+            "state": "São Palo",
+            "average_price": 910000,
+            "ad_quantity": 18,
+            "days_in_market": 26
+        },
+        {
+            "neighborhood": "Savassi",
+            "city": "Belo Horizonte",
+            "state": "Minas Gerais",
+            "average_price": 620000,
+            "ad_quantity": 180,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Lourdes",
+            "city": "Belo Horizonte",
+            "state": "Minas Gerais",
+            "average_price": 750000,
+            "ad_quantity": 120,
+            "days_in_market": 25
+        },
+        {
+            "neighborhood": "Funcionários",
+            "city": "Belo Horizonte",
+            "state": "Minas Gerais",
+            "average_price": 580000,
+            "ad_quantity": 145,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Buritis",
+            "city": "Belo Horizonte",
+            "state": "Minas Gerais",
+            "average_price": 450000,
+            "ad_quantity": 200,
+            "days_in_market": 33
+        },
+        {
+            "neighborhood": "Mangabeiras",
+            "city": "Belo Horizonte",
+            "state": "Minas Gerais",
+            "average_price": 900000,
+            "ad_quantity": 60,
+            "days_in_market": 20
+        },
+        {
+            "neighborhood": "Savasii",
+            "city": "Belo Orizonte",
+            "state": "Minas Gerais",
+            "average_price": 630000,
+            "ad_quantity": 8,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Funcionarios",
+            "city": "Belo Horizonte",
+            "state": "Minas Gerias",
+            "average_price": 575000,
+            "ad_quantity": 15,
+            "days_in_market": 32
+        },
+        {
+            "neighborhood": "Boa Viagem",
+            "city": "Recife",
+            "state": "Pernambuco",
+            "average_price": 520000,
+            "ad_quantity": 260,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Casa Forte",
+            "city": "Recife",
+            "state": "Pernambuco",
+            "average_price": 480000,
+            "ad_quantity": 130,
+            "days_in_market": 32
+        },
+        {
+            "neighborhood": "Espinheiro",
+            "city": "Recife",
+            "state": "Pernambuco",
+            "average_price": 410000,
+            "ad_quantity": 170,
+            "days_in_market": 38
+        },
+        {
+            "neighborhood": "Boa Viagen",
+            "city": "Recife",
+            "state": "Pernambuoc",
+            "average_price": 515000,
+            "ad_quantity": 10,
+            "days_in_market": 37
+        },
+        {
+            "neighborhood": "Batel",
+            "city": "Curitiba",
+            "state": "Paraná",
+            "average_price": 720000,
+            "ad_quantity": 160,
+            "days_in_market": 26
+        },
+        {
+            "neighborhood": "Água Verde",
+            "city": "Curitiba",
+            "state": "Paraná",
+            "average_price": 550000,
+            "ad_quantity": 220,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Ecoville",
+            "city": "Curitiba",
+            "state": "Paraná",
+            "average_price": 680000,
+            "ad_quantity": 140,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Centro Cívico",
+            "city": "Curitiba",
+            "state": "Paraná",
+            "average_price": 490000,
+            "ad_quantity": 110,
+            "days_in_market": 34
+        },
+        {
+            "neighborhood": "Bateu",
+            "city": "Curitba",
+            "state": "Paraná",
+            "average_price": 710000,
+            "ad_quantity": 7,
+            "days_in_market": 27
+        },
+        {
+            "neighborhood": "Moinhos de Vento",
+            "city": "Porto Alegre",
+            "state": "Rio Grande do Sul",
+            "average_price": 800000,
+            "ad_quantity": 130,
+            "days_in_market": 24
+        },
+        {
+            "neighborhood": "Petrópolis",
+            "city": "Porto Alegre",
+            "state": "Rio Grande do Sul",
+            "average_price": 600000,
+            "ad_quantity": 170,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Bela Vista",
+            "city": "Porto Alegre",
+            "state": "Rio Grande do Sul",
+            "average_price": 550000,
+            "ad_quantity": 190,
+            "days_in_market": 31
+        },
+        {
+            "neighborhood": "Menino Deus",
+            "city": "Porto Alegre",
+            "state": "Rio Grande do Sul",
+            "average_price": 510000,
+            "ad_quantity": 155,
+            "days_in_market": 33
+        },
+        {
+            "neighborhood": "Moinhos de Vento",
+            "city": "Porto Alegr",
+            "state": "Rio Grande do Sul",
+            "average_price": 790000,
+            "ad_quantity": 5,
+            "days_in_market": 25
+        },
+        {
+            "neighborhood": "Petropolis",
+            "city": "Porto Alegre",
+            "state": "Rio Grande do Sul",
+            "average_price": 595000,
+            "ad_quantity": 9,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Pituba",
+            "city": "Salvador",
+            "state": "Bahia",
+            "average_price": 480000,
+            "ad_quantity": 200,
+            "days_in_market": 34
+        },
+        {
+            "neighborhood": "Barra",
+            "city": "Salvador",
+            "state": "Bahia",
+            "average_price": 550000,
+            "ad_quantity": 175,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Ondina",
+            "city": "Salvador",
+            "state": "Bahia",
+            "average_price": 620000,
+            "ad_quantity": 90,
+            "days_in_market": 27
+        },
+        {
+            "neighborhood": "Graça",
+            "city": "Salvador",
+            "state": "Bahia",
+            "average_price": 700000,
+            "ad_quantity": 80,
+            "days_in_market": 23
+        },
+        {
+            "neighborhood": "Horto Florestal",
+            "city": "Salvador",
+            "state": "Bahia",
+            "average_price": 530000,
+            "ad_quantity": 115,
+            "days_in_market": 31
+        },
+        {
+            "neighborhood": "Pittuba",
+            "city": "Salvadro",
+            "state": "Bahia",
+            "average_price": 475000,
+            "ad_quantity": 14,
+            "days_in_market": 36
+        },
+        {
+            "neighborhood": "Ondinna",
+            "city": "Salvador",
+            "state": "Bahis",
+            "average_price": 615000,
+            "ad_quantity": 6,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Aldeota",
+            "city": "Fortaleza",
+            "state": "Ceará",
+            "average_price": 450000,
+            "ad_quantity": 240,
+            "days_in_market": 32
+        },
+        {
+            "neighborhood": "Meireles",
+            "city": "Fortaleza",
+            "state": "Ceará",
+            "average_price": 580000,
+            "ad_quantity": 210,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Cocó",
+            "city": "Fortaleza",
+            "state": "Ceará",
+            "average_price": 500000,
+            "ad_quantity": 180,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Edson Queiroz",
+            "city": "Fortaleza",
+            "state": "Ceará",
+            "average_price": 390000,
+            "ad_quantity": 150,
+            "days_in_market": 37
+        },
+        {
+            "neighborhood": "Aldeota",
+            "city": "Fortalesa",
+            "state": "Ceará",
+            "average_price": 445000,
+            "ad_quantity": 11,
+            "days_in_market": 33
+        },
+        {
+            "neighborhood": "Meireles",
+            "city": "Fortaleza",
+            "state": "Ceara",
+            "average_price": 575000,
+            "ad_quantity": 8,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Adrianópolis",
+            "city": "Manaus",
+            "state": "Amazonas",
+            "average_price": 420000,
+            "ad_quantity": 130,
+            "days_in_market": 40
+        },
+        {
+            "neighborhood": "Ponta Negra",
+            "city": "Manaus",
+            "state": "Amazonas",
+            "average_price": 550000,
+            "ad_quantity": 100,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Flores",
+            "city": "Manaus",
+            "state": "Amazonas",
+            "average_price": 350000,
+            "ad_quantity": 160,
+            "days_in_market": 42
+        },
+        {
+            "neighborhood": "Adrianopolis",
+            "city": "Manauss",
+            "state": "Amazonas",
+            "average_price": 415000,
+            "ad_quantity": 7,
+            "days_in_market": 41
+        },
+        {
+            "neighborhood": "Renascença",
+            "city": "São Luís",
+            "state": "Maranhão",
+            "average_price": 380000,
+            "ad_quantity": 140,
+            "days_in_market": 38
+        },
+        {
+            "neighborhood": "Calhau",
+            "city": "São Luís",
+            "state": "Maranhão",
+            "average_price": 450000,
+            "ad_quantity": 120,
+            "days_in_market": 33
+        },
+        {
+            "neighborhood": "Ponta D'Areia",
+            "city": "São Luís",
+            "state": "Maranhão",
+            "average_price": 520000,
+            "ad_quantity": 85,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Renascensa",
+            "city": "São Luis",
+            "state": "Maranão",
+            "average_price": 375000,
+            "ad_quantity": 9,
+            "days_in_market": 39
+        },
+        {
+            "neighborhood": "Jatiúca",
+            "city": "Maceió",
+            "state": "Alagoas",
+            "average_price": 400000,
+            "ad_quantity": 150,
+            "days_in_market": 36
+        },
+        {
+            "neighborhood": "Ponta Verde",
+            "city": "Maceió",
+            "state": "Alagoas",
+            "average_price": 480000,
+            "ad_quantity": 110,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Pajuçara",
+            "city": "Maceió",
+            "state": "Alagoas",
+            "average_price": 350000,
+            "ad_quantity": 130,
+            "days_in_market": 38
+        },
+        {
+            "neighborhood": "Jatiuca",
+            "city": "Maceiô",
+            "state": "Alagoas",
+            "average_price": 395000,
+            "ad_quantity": 6,
+            "days_in_market": 37
+        },
+        {
+            "neighborhood": "Setor Bueno",
+            "city": "Goiânia",
+            "state": "Goiás",
+            "average_price": 420000,
+            "ad_quantity": 200,
+            "days_in_market": 32
+        },
+        {
+            "neighborhood": "Setor Marista",
+            "city": "Goiânia",
+            "state": "Goiás",
+            "average_price": 500000,
+            "ad_quantity": 175,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Jardim Goiás",
+            "city": "Goiânia",
+            "state": "Goiás",
+            "average_price": 550000,
+            "ad_quantity": 140,
+            "days_in_market": 26
+        },
+        {
+            "neighborhood": "Setor Bueno",
+            "city": "Goiania",
+            "state": "Goias",
+            "average_price": 418000,
+            "ad_quantity": 10,
+            "days_in_market": 33
+        },
+        {
+            "neighborhood": "Asa Sul",
+            "city": "Brasília",
+            "state": "Distrito Federal",
+            "average_price": 700000,
+            "ad_quantity": 190,
+            "days_in_market": 25
+        },
+        {
+            "neighborhood": "Asa Norte",
+            "city": "Brasília",
+            "state": "Distrito Federal",
+            "average_price": 650000,
+            "ad_quantity": 210,
+            "days_in_market": 27
+        },
+        {
+            "neighborhood": "Lago Sul",
+            "city": "Brasília",
+            "state": "Distrito Federal",
+            "average_price": 1800000,
+            "ad_quantity": 45,
+            "days_in_market": 40
+        },
+        {
+            "neighborhood": "Sudoeste",
+            "city": "Brasília",
+            "state": "Distrito Federal",
+            "average_price": 720000,
+            "ad_quantity": 160,
+            "days_in_market": 24
+        },
+        {
+            "neighborhood": "Noroeste",
+            "city": "Brasília",
+            "state": "Distrito Federal",
+            "average_price": 850000,
+            "ad_quantity": 130,
+            "days_in_market": 22
+        },
+        {
+            "neighborhood": "Asa Sul",
+            "city": "Brasilia",
+            "state": "Distrio Federal",
+            "average_price": 695000,
+            "ad_quantity": 13,
+            "days_in_market": 26
+        },
+        {
+            "neighborhood": "Lago Sul",
+            "city": "Brazilia",
+            "state": "Distrito Federal",
+            "average_price": 1780000,
+            "ad_quantity": 4,
+            "days_in_market": 42
+        },
+        {
+            "neighborhood": "Ponta Negra",
+            "city": "Natal",
+            "state": "Rio Grande do Norte",
+            "average_price": 380000,
+            "ad_quantity": 170,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Petrópolis",
+            "city": "Natal",
+            "state": "Rio Grande do Norte",
+            "average_price": 320000,
+            "ad_quantity": 140,
+            "days_in_market": 38
+        },
+        {
+            "neighborhood": "Tirol",
+            "city": "Natal",
+            "state": "Rio Grande do Norte",
+            "average_price": 450000,
+            "ad_quantity": 110,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Ponta Negr",
+            "city": "Ntal",
+            "state": "Rio Grande do Norte",
+            "average_price": 375000,
+            "ad_quantity": 5,
+            "days_in_market": 36
+        },
+        {
+            "neighborhood": "São Francisco",
+            "city": "Florianópolis",
+            "state": "Santa Catarina",
+            "average_price": 650000,
+            "ad_quantity": 120,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Jurerê Internacional",
+            "city": "Florianópolis",
+            "state": "Santa Catarina",
+            "average_price": 1500000,
+            "ad_quantity": 55,
+            "days_in_market": 45
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Florianópolis",
+            "state": "Santa Catarina",
+            "average_price": 480000,
+            "ad_quantity": 200,
+            "days_in_market": 32
+        },
+        {
+            "neighborhood": "Ingleses",
+            "city": "Florianópolis",
+            "state": "Santa Catarina",
+            "average_price": 420000,
+            "ad_quantity": 250,
+            "days_in_market": 36
+        },
+        {
+            "neighborhood": "Jurere Internacional",
+            "city": "Florianopolis",
+            "state": "Santa Catarina",
+            "average_price": 1480000,
+            "ad_quantity": 8,
+            "days_in_market": 46
+        },
+        {
+            "neighborhood": "São Francisc",
+            "city": "Florianópolis",
+            "state": "Santa Catrina",
+            "average_price": 645000,
+            "ad_quantity": 3,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Cabula",
+            "city": "Salvador",
+            "state": "Bahia",
+            "average_price": 280000,
+            "ad_quantity": 220,
+            "days_in_market": 42
+        },
+        {
+            "neighborhood": "Paralela",
+            "city": "Salvador",
+            "state": "Bahia",
+            "average_price": 350000,
+            "ad_quantity": 195,
+            "days_in_market": 37
+        },
+        {
+            "neighborhood": "Perdizes",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 720000,
+            "ad_quantity": 180,
+            "days_in_market": 26
+        },
+        {
+            "neighborhood": "Santana",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 450000,
+            "ad_quantity": 260,
+            "days_in_market": 34
+        },
+        {
+            "neighborhood": "Lapa",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 530000,
+            "ad_quantity": 200,
+            "days_in_market": 31
+        },
+        {
+            "neighborhood": "Brooklin",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 850000,
+            "ad_quantity": 240,
+            "days_in_market": 23
+        },
+        {
+            "neighborhood": "Brooklin",
+            "city": "Sao Paulo",
+            "state": "Sao Paulo",
+            "average_price": 845000,
+            "ad_quantity": 15,
+            "days_in_market": 24
+        },
+        {
+            "neighborhood": "Perdzes",
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "average_price": 715000,
+            "ad_quantity": 7,
+            "days_in_market": 27
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Curitiba",
+            "state": "Paraná",
+            "average_price": 380000,
+            "ad_quantity": 190,
+            "days_in_market": 36
+        },
+        {
+            "neighborhood": "Bigorrilho",
+            "city": "Curitiba",
+            "state": "Paraná",
+            "average_price": 620000,
+            "ad_quantity": 150,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Champagnat",
+            "city": "Curitiba",
+            "state": "Paraná",
+            "average_price": 700000,
+            "ad_quantity": 125,
+            "days_in_market": 25
+        },
+        {
+            "neighborhood": "Bigorilho",
+            "city": "Curitiba",
+            "state": "Parana",
+            "average_price": 615000,
+            "ad_quantity": 9,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Marco",
+            "city": "Belém",
+            "state": "Pará",
+            "average_price": 320000,
+            "ad_quantity": 160,
+            "days_in_market": 40
+        },
+        {
+            "neighborhood": "Umarizal",
+            "city": "Belém",
+            "state": "Pará",
+            "average_price": 450000,
+            "ad_quantity": 120,
+            "days_in_market": 34
+        },
+        {
+            "neighborhood": "Batista Campos",
+            "city": "Belém",
+            "state": "Pará",
+            "average_price": 400000,
+            "ad_quantity": 140,
+            "days_in_market": 36
+        },
+        {
+            "neighborhood": "Umarizal",
+            "city": "Belem",
+            "state": "Para",
+            "average_price": 445000,
+            "ad_quantity": 6,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Grageru",
+            "city": "Aracaju",
+            "state": "Sergipe",
+            "average_price": 350000,
+            "ad_quantity": 130,
+            "days_in_market": 38
+        },
+        {
+            "neighborhood": "Jardins",
+            "city": "Aracaju",
+            "state": "Sergipe",
+            "average_price": 420000,
+            "ad_quantity": 110,
+            "days_in_market": 32
+        },
+        {
+            "neighborhood": "13 de Julho",
+            "city": "Aracaju",
+            "state": "Sergipe",
+            "average_price": 500000,
+            "ad_quantity": 90,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Grageru",
+            "city": "Aracajú",
+            "state": "Sergipe",
+            "average_price": 348000,
+            "ad_quantity": 5,
+            "days_in_market": 39
+        },
+        {
+            "neighborhood": "Plano Piloto",
+            "city": "Palmas",
+            "state": "Tocantins",
+            "average_price": 280000,
+            "ad_quantity": 90,
+            "days_in_market": 45
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Vitória",
+            "state": "Espírito Santo",
+            "average_price": 420000,
+            "ad_quantity": 150,
+            "days_in_market": 33
+        },
+        {
+            "neighborhood": "Praia do Canto",
+            "city": "Vitória",
+            "state": "Espírito Santo",
+            "average_price": 580000,
+            "ad_quantity": 130,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Jardim Camburi",
+            "city": "Vitória",
+            "state": "Espírito Santo",
+            "average_price": 380000,
+            "ad_quantity": 200,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Praia do Canto",
+            "city": "Vitoria",
+            "state": "Espirito Santo",
+            "average_price": 575000,
+            "ad_quantity": 8,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Altiplano",
+            "city": "João Pessoa",
+            "state": "Paraíba",
+            "average_price": 450000,
+            "ad_quantity": 120,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Manaíra",
+            "city": "João Pessoa",
+            "state": "Paraíba",
+            "average_price": 520000,
+            "ad_quantity": 140,
+            "days_in_market": 28
+        },
+        {
+            "neighborhood": "Tambaú",
+            "city": "João Pessoa",
+            "state": "Paraíba",
+            "average_price": 600000,
+            "ad_quantity": 95,
+            "days_in_market": 25
+        },
+        {
+            "neighborhood": "Manaira",
+            "city": "Joao Pessoa",
+            "state": "Paraiba",
+            "average_price": 515000,
+            "ad_quantity": 7,
+            "days_in_market": 29
+        },
+        {
+            "neighborhood": "Ponta Verde",
+            "city": "Maceió",
+            "state": "Alagoas",
+            "average_price": 485000,
+            "ad_quantity": 105,
+            "days_in_market": 31
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Campo Grande",
+            "state": "Mato Grosso do Sul",
+            "average_price": 320000,
+            "ad_quantity": 180,
+            "days_in_market": 40
+        },
+        {
+            "neighborhood": "Jardim dos states",
+            "city": "Campo Grande",
+            "state": "Mato Grosso do Sul",
+            "average_price": 450000,
+            "ad_quantity": 130,
+            "days_in_market": 34
+        },
+        {
+            "neighborhood": "Chácara Cachoeira",
+            "city": "Campo Grande",
+            "state": "Mato Grosso do Sul",
+            "average_price": 500000,
+            "ad_quantity": 100,
+            "days_in_market": 30
+        },
+        {
+            "neighborhood": "Jardim dos states",
+            "city": "Canpo Grande",
+            "state": "Mato Grosso do Sul",
+            "average_price": 448000,
+            "ad_quantity": 4,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Centro Norte",
+            "city": "Cuiabá",
+            "state": "Mato Grosso",
+            "average_price": 350000,
+            "ad_quantity": 140,
+            "days_in_market": 38
+        },
+        {
+            "neighborhood": "Jardim das Américas",
+            "city": "Cuiabá",
+            "state": "Mato Grosso",
+            "average_price": 420000,
+            "ad_quantity": 110,
+            "days_in_market": 34
+        },
+        {
+            "neighborhood": "Centro Norte",
+            "city": "Cuiaba",
+            "state": "Mato Groso",
+            "average_price": 345000,
+            "ad_quantity": 6,
+            "days_in_market": 39
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Teresina",
+            "state": "Piauí",
+            "average_price": 250000,
+            "ad_quantity": 120,
+            "days_in_market": 42
+        },
+        {
+            "neighborhood": "Jóquei",
+            "city": "Teresina",
+            "state": "Piauí",
+            "average_price": 380000,
+            "ad_quantity": 95,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Joquei",
+            "city": "Terezina",
+            "state": "Piauí",
+            "average_price": 375000,
+            "ad_quantity": 5,
+            "days_in_market": 36
+        },
+        {
+            "neighborhood": "Jardim Renascença",
+            "city": "São Luís",
+            "state": "Maranhão",
+            "average_price": 410000,
+            "ad_quantity": 100,
+            "days_in_market": 35
+        },
+        {
+            "neighborhood": "Parque Dez",
+            "city": "Manaus",
+            "state": "Amazonas",
+            "average_price": 280000,
+            "ad_quantity": 180,
+            "days_in_market": 44
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Rio Branco",
+            "state": "Acre",
+            "average_price": 220000,
+            "ad_quantity": 80,
+            "days_in_market": 48
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Porto Velho",
+            "state": "Rondônia",
+            "average_price": 260000,
+            "ad_quantity": 90,
+            "days_in_market": 45
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Macapá",
+            "state": "Amapá",
+            "average_price": 240000,
+            "ad_quantity": 70,
+            "days_in_market": 50
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Boa Vista",
+            "state": "Roraima",
+            "average_price": 230000,
+            "ad_quantity": 60,
+            "days_in_market": 52
+        },
+        {
+            "neighborhood": "Centro",
+            "city": "Boa Vista",
+            "state": "Roraíma",
+            "average_price": 228000,
+            "ad_quantity": 3,
+            "days_in_market": 53
+        }
+    ]
+}

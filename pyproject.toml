@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "Service for the normalization of column data."
+authors = ["Luduvico <galahadempr@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.12.5"
+pydantic-settings = "^2.13.1"
+loguru = "^0.7.3"
+pandas = "^3.0.2"
+sentence-transformers = "^5.4.0"
