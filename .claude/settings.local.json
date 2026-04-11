@@ -9,7 +9,22 @@
       "Bash(xxd -l 8 README.md)",
       "Bash(iconv -f UTF-16LE -t UTF-8 README.md)",
       "Bash(sed '1s/^\\\\xEF\\\\xBB\\\\xBF//')",
-      "Bash(mv README_fixed.md README.md)"
+      "Bash(mv README_fixed.md README.md)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(command -v python3)",
+      "Bash(command -v python)",
+      "Bash(command -v py)",
+      "Read(//c/Users/luduvico.neto/AppData/Local/Programs/Python/**)",
+      "Bash(ls /c/Python*/python.exe)",
+      "Bash(where.exe python:*)",
+      "Bash(cmd.exe /c \"where python\")",
+      "Bash(/c/Users/luduvico.neto/AppData/Local/Programs/Python/Python313/python.exe --version)",
+      "Bash(/c/Python313/python.exe --version)",
+      "Bash(/c/Python312/python.exe --version)",
+      "Bash(/c/Python311/python.exe --version)",
+      "Bash(/c/Users/luduvico.neto/AppData/Local/Programs/Python/Python313/python.exe -m pip install pyinstaller)",
+      "Bash(/c/Users/luduvico.neto/AppData/Local/Programs/Python/Python313/Scripts/pyinstaller.exe --onefile --console --name \"HappyBirthday_Rafael\" birth.py)"
     ]
   }
 }

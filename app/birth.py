@@ -132,3 +132,5 @@ banner = r"""
 
 print(banner)
 print("Process finished with exit code 0")
+
+input("\nPressione Enter para fechar...")
