@@ -1,18 +1,45 @@
-from services.probability import get_distinct_values
-from dependencies.dependencies import load_dataframe
+from services.sheets import normalize_dataframe
+from models.models import SheetMetadata
 
-from core.lifespan import lifespan
+extraction_metadata = {
+    "file_path": r"C:\Users\luduvico.neto\Documents - Copia\dados planilha.xlsx",
+    "sheet_name": "dados",
+    "skip_rows": 4,
+    "skip_footer": 1,
+    "columns": [
+        {
+            "name": "void",
+            "parser": "to_void",
+        },
+        {
+            "name": "void",
+            "parser": "to_void",
+        },
+        {
+            "name": "nome",
+            "parser": "to_str",
+        },
+        {
+            "name": "idade",
+            "parser": "to_int",
+        },
+        {
+            "name": "vendas",
+            "parser": "to_int",
+        },
+        {
+            "name": "void",
+            "parser": "to_void",
+        },
+        {
+            "name": "void",
+            "parser": "to_void",
+        },
+    ],
+}
 
-dataframe = load_dataframe(r"app\database\dummy_df.json")
+metadata = SheetMetadata(creation_metadata=extraction_metadata)
 
-counted_values = get_distinct_values([data.city for data in dataframe.data])
+dataframe = normalize_dataframe(metadata)
 
-print("Distinct values with counts:", counted_values)
-
-with lifespan() as transformer:
-    deduplicated = transformer.deduplicate(
-        counted_values,
-        mapping_path=r"app\database\depara.json",
-    )
-
-    print("Deduplicated values:", deduplicated)
+print(dataframe)

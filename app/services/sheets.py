@@ -17,7 +17,7 @@ def normalize_dataframe(
         target_columns = [
             column.name
             for column in metadata.creation_metadata.columns
-            if column.name != "to_void"
+            if column.name != "void"
         ]
 
         logger.info("Creating column mapper...")
