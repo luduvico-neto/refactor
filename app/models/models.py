@@ -18,3 +18,24 @@ class Row(BaseModel):
 
 class DataFrame(BaseModel):
     data: list[Row]
+
+
+class Column(BaseModel):
+    name: str
+    parser: str
+
+
+class CreationMetadata(BaseModel):
+    file_path: str
+    sheet_name: str
+    skip_rows: int
+    skip_footer: int
+    columns: list[Column]
+
+
+class RetrievalMetadata(BaseModel):
+    file_path: str
+    sheet_name: str
+    skip_rows: int
+    skip_footer: int
+    columns: list[Column]

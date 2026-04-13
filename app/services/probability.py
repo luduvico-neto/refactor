@@ -4,6 +4,8 @@ from pathlib import Path
 from sentence_transformers import SentenceTransformer
 from collections import Counter
 
+from typing import Annotated
+
 
 def get_distinct_values(targets: list[str]) -> dict[str, int]:
     """It gets a list of values and returns"""
@@ -57,10 +59,19 @@ class Transformer:
             return ranked[0]
         return ranked[0] if ranked else None
 
+    """N similarity list"""
+
+    def similarity_list(
+        self, _list: list[list[float]], _list2: list[list[float]]
+    ) -> list[list[float]]:
+        similarity_matrix = self.model.similarity(_list, _list2)
+        return similarity_matrix
+
     def deduplicate(
         self,
-        counted_values: list[tuple[str, int]],
-        mapping_path: str = None,
+        counted_values: Annotated[
+            list[tuple[str, int]], "List of distinct (value, count) pairs"
+        ],
     ) -> list[tuple[str, int]]:
         if not counted_values:
             return []
@@ -69,7 +80,7 @@ class Transformer:
         counts = {v: c for v, c in counted_values}
 
         embeddings = self.embed_list(values)
-        similarity_matrix = self.model.similarity(embeddings, embeddings)
+        similarity_matrix = self.similarity_list(embeddings, embeddings)
 
         visited = set()
         result = []
@@ -93,10 +104,5 @@ class Transformer:
             for idx in group:
                 if idx != canonical:
                     depara[values[idx]] = values[canonical]
-
-        if mapping_path:
-            Path(mapping_path).parent.mkdir(parents=True, exist_ok=True)
-            with open(mapping_path, "w", encoding="utf-8") as f:
-                json.dump(depara, f, ensure_ascii=False, indent=2)
 
         return result

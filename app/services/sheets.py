@@ -1,5 +1,7 @@
 import pandas
 
+from models.models import CreationMetadata, RetrievalMetadata
+
 
 def read_excel_file(
     file_path: str,
@@ -28,5 +30,4 @@ def normalize_dataframe(
         skip_rows=skip_rows,
         skip_footer=skip_footer,
     )
-
     ...
