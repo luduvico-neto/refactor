@@ -39,3 +39,7 @@ class RetrievalMetadata(BaseModel):
     skip_rows: int
     skip_footer: int
     columns: list[Column]
+
+
+class SheetMetadata(BaseModel):
+    creation_metadata: CreationMetadata
