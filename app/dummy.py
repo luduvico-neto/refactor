@@ -71,10 +71,7 @@ with lifespan() as transformer:
         counted_values = get_distinct_values(values)
         print("Distinct values with counts:", counted_values)
 
-        deduplicated, depara = transformer.deduplicate(
-            counted_values,
-            mapping_path=rf"database\depara_{column_name}.json",
-        )
+        deduplicated, depara = transformer.deduplicate(counted_values)
         print("Deduplicated values:", deduplicated)
 
         if depara:

@@ -1,6 +1,3 @@
-import json
-from pathlib import Path
-
 from sentence_transformers import SentenceTransformer
 from collections import Counter
 
@@ -72,7 +69,6 @@ class Transformer:
         counted_values: Annotated[
             list[tuple[str, int]], "List of distinct (value, count) pairs"
         ],
-        mapping_path: str = None,
     ) -> tuple[list[tuple[str, int]], dict[str, str]]:
         if not counted_values:
             return [], {}
@@ -105,10 +101,5 @@ class Transformer:
             for idx in group:
                 if idx != canonical:
                     depara[values[idx]] = values[canonical]
-
-        if mapping_path:
-            Path(mapping_path).parent.mkdir(parents=True, exist_ok=True)
-            with open(mapping_path, "w", encoding="utf-8") as f:
-                json.dump(depara, f, ensure_ascii=False, indent=2)
 
         return result, depara
