@@ -72,9 +72,10 @@ class Transformer:
         counted_values: Annotated[
             list[tuple[str, int]], "List of distinct (value, count) pairs"
         ],
-    ) -> list[tuple[str, int]]:
+        mapping_path: str = None,
+    ) -> tuple[list[tuple[str, int]], dict[str, str]]:
         if not counted_values:
-            return []
+            return [], {}
 
         values = [v for v, _ in counted_values]
         counts = {v: c for v, c in counted_values}
@@ -105,4 +106,9 @@ class Transformer:
                 if idx != canonical:
                     depara[values[idx]] = values[canonical]
 
-        return result
+        if mapping_path:
+            Path(mapping_path).parent.mkdir(parents=True, exist_ok=True)
+            with open(mapping_path, "w", encoding="utf-8") as f:
+                json.dump(depara, f, ensure_ascii=False, indent=2)
+
+        return result, depara

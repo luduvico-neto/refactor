@@ -23,6 +23,7 @@ class DataFrame(BaseModel):
 class Column(BaseModel):
     name: str
     parser: str
+    normalize: bool = False
 
 
 class CreationMetadata(BaseModel):
