@@ -1,35 +1,56 @@
-from loguru import logger
+from services.sheets import refactor_sheet
 
-from core import lifespan
-from dependencies.dependencies import load_dataframe
-
-from models.models import DataFrame
-
-df = load_dataframe(r"app\database\dummy_df.json")
-
-with lifespan() as fuzzy_checker:
-
-    cities = [data.city for data in df.data]
-    ranked = fuzzy_checker.compare_word("São paulo", cities)
-
-    list_embedded = fuzzy_checker.embed_list(cities)
-
-    new_dataframe_data = [
+extraction_metadata = {
+    "file_path": r"C:\Users\luduvico.neto\Documents - Copia\dados planilha.xlsx",
+    "sheet_name": "dados",
+    "skip_rows": 4,
+    "skip_footer": 0,
+    "columns": [
         {
-            "neighborhood": data.neighborhood,
-            "city": data.city,
-            "state": data.state,
-            "average_price": data.average_price,
-            "ad_quantity": data.ad_quantity,
-            "days_in_market": data.days_in_market,
-            "embedding": list_embedded[i],
-        }
-        for i, data in enumerate(df.data)
-    ]
+            "name": "void",
+            "parser": "to_void",
+        },
+        {
+            "name": "void",
+            "parser": "to_void",
+        },
+        {
+            "name": "cidade",
+            "parser": "to_str",
+            "normalize": True,
+        },
+        {
+            "name": "estado",
+            "parser": "to_str",
+            "normalize": True,
+        },
+        {
+            "name": "nome",
+            "parser": "to_str",
+            "normalize": True,
+        },
+        {
+            "name": "idade",
+            "parser": "to_int",
+        },
+        {
+            "name": "vendas",
+            "parser": "to_int",
+        },
+        {
+            "name": "void",
+            "parser": "to_void",
+        },
+        {
+            "name": "void",
+            "parser": "to_void",
+        },
+    ],
+}
 
-    new_dataframe = DataFrame(data=new_dataframe_data)
+dataframe = refactor_sheet(
+    extraction_metadata=extraction_metadata,
+    output_path=r"database\dataframe_refatorado.xlsx",
+)
 
-    # Find the most similar neighborhood to "São pulo" using embeddings
-    idx, score, name = ranked[0]
-    logger.info(f"Most similar: '{name}' (index={idx}, score={score:.4f})")
-    logger.info(f"Top 5: {[(name, f'{score:.4f}') for _, score, name in ranked[:5]]}")
+print(dataframe)
