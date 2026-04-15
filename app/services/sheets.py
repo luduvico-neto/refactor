@@ -51,7 +51,7 @@ def normalize_dataframe(
 def refactor_sheet(
     extraction_metadata: dict,
     output_path: str,
-    cutoffs: list[float] = [0.9, 0.85],
+    cutoffs: list[float] = [0.9, 0.87],
 ) -> pandas.DataFrame:
     """Loads, normalizes by probability, and exports a refactored xlsx.
 

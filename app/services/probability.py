@@ -1,5 +1,6 @@
 from sentence_transformers import SentenceTransformer
 from collections import Counter
+from rapidfuzz import fuzz, process
 
 from typing import Annotated
 
@@ -77,7 +78,8 @@ class Transformer:
         counts = {v: c for v, c in counted_values}
 
         embeddings = self.embed_list(values)
-        similarity_matrix = self.similarity_list(embeddings, embeddings)
+        embedding_matrix = self.similarity_list(embeddings, embeddings)
+        fuzzy_matrix = process.cdist(values, values, scorer=fuzz.token_set_ratio) / 100.0
 
         visited = set()
         result = []
@@ -91,7 +93,8 @@ class Transformer:
             for j in range(i + 1, len(values)):
                 if j in visited:
                     continue
-                if similarity_matrix[i][j].item() >= self.cutoff:
+                score = max(embedding_matrix[i][j].item(), fuzzy_matrix[i][j])
+                if score >= self.cutoff:
                     group.append(j)
 
             canonical = max(group, key=lambda idx: counts[values[idx]])
