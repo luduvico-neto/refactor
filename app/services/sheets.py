@@ -51,7 +51,7 @@ def normalize_dataframe(
 def refactor_sheet(
     extraction_metadata: dict,
     output_path: str,
-    cutoffs: list[float] = [0.9, 0.88],
+    cutoffs: list[float] = [0.9, 0.85],
 ) -> pandas.DataFrame:
     """Loads, normalizes by probability, and exports a refactored xlsx.
 
@@ -64,9 +64,7 @@ def refactor_sheet(
     dataframe = normalize_dataframe(metadata)
 
     columns_to_normalize = [
-        column.name
-        for column in metadata.creation_metadata.columns
-        if column.normalize
+        column.name for column in metadata.creation_metadata.columns if column.normalize
     ]
 
     if not columns_to_normalize:
