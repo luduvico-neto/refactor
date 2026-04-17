@@ -30,3 +30,15 @@ class SiengeGatewayUtils:
 
     def __str__(self):
         return f"SiengeGatewayUtils(endpoint={self.endpoint}, api_key={self.api_key})"
+
+
+class SiengeGatewayUtilsFactory:
+    @staticmethod
+    def create_sienge_gateway_utils(endpoint, api_key):
+        return SiengeGatewayUtils(endpoint, api_key)
+
+
+class AllUtilsFactory:
+    @staticmethod
+    def create_all_utils(field_name, field_value):
+        return AllUtils(field_name, field_value)
