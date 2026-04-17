@@ -25,6 +25,8 @@ class Transformer:
         self.cutoff = cutoff
         self.model = _model
 
+    """Transformer class for the embedding and similarity operations."""
+
     def embed_list(self, _list: list[str]) -> list[list[float]]:
         embedded_list = self.model.encode(_list, convert_to_tensor=True)
         return embedded_list
@@ -79,7 +81,9 @@ class Transformer:
 
         embeddings = self.embed_list(values)
         embedding_matrix = self.similarity_list(embeddings, embeddings)
-        fuzzy_matrix = process.cdist(values, values, scorer=fuzz.token_set_ratio) / 100.0
+        fuzzy_matrix = (
+            process.cdist(values, values, scorer=fuzz.token_set_ratio) / 100.0
+        )
 
         visited = set()
         result = []
