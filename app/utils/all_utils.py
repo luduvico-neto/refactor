@@ -31,6 +31,23 @@ class SiengeGatewayUtils:
     def __str__(self):
         return f"SiengeGatewayUtils(endpoint={self.endpoint}, api_key={self.api_key})"
 
+    def __int__(self):
+        return hash((self.endpoint, self.api_key))
+
+    def __eq__(self, other):
+        if isinstance(other, SiengeGatewayUtils):
+            return self.endpoint == other.endpoint and self.api_key == other.api_key
+        return False
+
+    def __hash__(self):
+        return hash((self.endpoint, self.api_key))
+
+    def __repr__(self):
+        return f"SiengeGatewayUtils(endpoint={self.endpoint}, api_key={self.api_key})"
+
+    def __getattr__(self, name):
+        pass
+
 
 class SiengeGatewayUtilsFactory:
     @staticmethod
